@@ -1,0 +1,89 @@
+@import "bootstrap/scss/bootstrap.scss";
+
+* {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+ul li::marker {
+    list-style-type: none;
+}
+
+
+h2{
+    margin-top: 0;
+}
+
+.menu-ul {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.menu-li {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+}
+
+.menu-li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all 0.65s ease;
+    bottom: 0;
+    left: 0;
+}
+
+.menu-li:hover::before{
+    transform: scaleX(1);
+    cursor: pointer;
+}
+
+.selected-menu {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.selected-menu::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #1a75b0;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-container{
+    background: #602e73;
+    box-shadow: -1px 0px 5px 3px #602e73;
+}
+
+.menu-strip{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-box{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 30px;
+    padding: 30px;
+    border: 2px solid #8f5da1;
+    border-radius: 15px;
+}
+
+

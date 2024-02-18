@@ -1,0 +1,26 @@
+.progress-container{
+    display: flex;
+    height: 4vh;
+    width: 100%;
+    flex-wrap: wrap;
+    background: #8f5da1;
+    padding: 0px;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.progress-element{
+    display: flex;
+    width: 7vw;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0px;
+}
+
+.selected {
+    background: #602e73;
+    border: 2px solid #431250;
+    border-radius: 5px;
+}

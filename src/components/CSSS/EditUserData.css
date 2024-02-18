@@ -1,0 +1,15 @@
+.close-icon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    height: 25px;
+    background-color: transparent;
+
+}
+
+.close-icon:hover{
+    filter: drop-shadow(0 0 3px red);
+}
+

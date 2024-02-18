@@ -1,0 +1,26 @@
+@import "bootstrap/scss/bootstrap.scss";
+
+
+.thematic-container{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 30px;
+    padding: 30px;
+    border: 2px solid #8f5da1;
+    border-radius: 15px;
+    color: $purple;
+}
+
+.thematic-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.thematic-li {
+    width: calc(33.33% - 10px);
+
+}
